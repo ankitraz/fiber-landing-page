@@ -310,4 +310,30 @@ h3 {
     width: fit-content;
     padding-left: 2rem;
   }
+}
+
+.media-section .media-section__heading h3 {
+  margin-top: 0;
+  margin-bottom: 3rem;
+  line-height: 1.2;
+}
+.media-section .media-section__heading .colored__text {
+  margin-bottom: 1rem;
+}
+.media-section .media-object {
+  padding-bottom: 2.3rem;
+}
+@media screen and (min-width: 768px) {
+  .media-section .media-section__heading {
+    width: 600px;
+    padding-bottom: 3rem;
+  }
+  .media-section .grid {
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
+  .media-section .media-object {
+    padding: 0;
+    padding-right: 3rem;
+  }
 }/*# sourceMappingURL=styles.css.map */
