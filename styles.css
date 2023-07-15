@@ -336,4 +336,54 @@ h3 {
     padding: 0;
     padding-right: 3rem;
   }
+}
+
+.callout .container {
+  background: #4d13d1;
+  border-radius: 7px;
+}
+.callout .container .callout__content {
+  justify-self: center;
+  padding: 2rem;
+}
+.callout .container .callout__content h2 {
+  color: white;
+  font-size: 4rem;
+}
+.callout .container .callout__content p {
+  color: white;
+  opacity: 0.8;
+}
+.callout .container .callout__img {
+  width: 100%;
+  padding: 2rem;
+  position: relative;
+  bottom: 0;
+  padding-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  .callout .grid {
+    grid-template-rows: max-content;
+  }
+  .callout .container {
+    position: relative;
+  }
+  .callout .container .callout__content {
+    margin-top: 8rem;
+    margin-bottom: 10rem;
+    padding-left: 5rem;
+    margin-right: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .callout .container .callout__content h2 {
+    margin-top: 0;
+  }
+  .callout .container .callout__img {
+    position: absolute;
+    width: 47%;
+    right: 4.3rem;
+    bottom: 0;
+    padding: 0;
+  }
 }/*# sourceMappingURL=styles.css.map */

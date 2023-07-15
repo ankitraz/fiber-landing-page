@@ -428,3 +428,66 @@ h3 {
         }
     }
 }
+
+// callout section
+
+
+.callout {
+
+    .container {
+        background: $primary-color;
+        border-radius: 7px;
+
+        .callout__content{
+            justify-self: center;
+            padding: 2rem;
+
+            h2 {
+                color: white;
+                font-size: 4rem;
+            }
+            p {
+                color: white;
+                opacity: 0.8;
+            }
+        }
+
+        .callout__img {
+            width: 100%;
+            padding: 2rem;
+            position: relative;
+            bottom: 0;
+            padding-bottom: 0;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+
+        .grid {
+            grid-template-rows: max-content;
+        }
+        .container {
+            position: relative;
+            .callout__content{
+                h2 {
+                    margin-top: 0;
+                }
+
+               margin-top: 8rem;
+               margin-bottom: 10rem;
+               padding-left: 5rem;
+               margin-right: 5rem;
+               padding-top: 3rem;
+               padding-bottom: 3rem;
+            }
+
+            .callout__img {
+                position: absolute;
+                width: 47%;
+                right: 4.3rem;
+                bottom: 0;
+                padding: 0;
+            }
+        }
+    }
+}
