@@ -386,4 +386,14 @@ h3 {
     bottom: 0;
     padding: 0;
   }
+}
+
+.testimonial .grid {
+  gap: 4rem 3rem;
+}
+@media screen and (min-width: 768px) {
+  .testimonial.block {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }/*# sourceMappingURL=styles.css.map */
