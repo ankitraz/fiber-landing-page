@@ -254,6 +254,9 @@ h3 {
 .hero {
   background-color: #fbf8f3;
 }
+.hero.block {
+  padding-top: 0;
+}
 .hero .hero__img {
   width: 100%;
   grid-row-start: 1;
@@ -288,6 +291,10 @@ h3 {
   color: #000000;
 }
 @media screen and (min-width: 768px) {
+  .hero.block {
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+  }
   .hero .hero__content {
     display: flex;
     flex-direction: column;
@@ -395,5 +402,43 @@ h3 {
   .testimonial.block {
     padding-left: 0;
     padding-right: 0;
+  }
+}
+
+.footer.block {
+  background: #fbf8f3;
+}
+.footer .container.grid {
+  row-gap: 3rem;
+}
+.footer .container .footer__heading {
+  align-self: center;
+}
+.footer .container .footer__heading h3 {
+  margin-top: 0;
+  font-size: 3rem;
+}
+.footer .container .footer__body {
+  align-self: center;
+}
+.footer .container .footer__body.grid {
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  row-gap: 4rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media screen and (min-width: 768px) {
+  .footer .container .footer__heading {
+    padding-right: 10rem;
+    padding-left: 0;
+  }
+  .footer .container .footer__body.grid {
+    grid-template-columns: repeat(4, 1fr);
+    -moz-column-gap: 5rem;
+         column-gap: 5rem;
+  }
+  .footer .container .footer__body.grid .list {
+    width: -moz-max-content;
+    width: max-content;
   }
 }/*# sourceMappingURL=styles.css.map */

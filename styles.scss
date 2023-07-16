@@ -323,6 +323,10 @@ h3 {
 
 // hero section
 .hero {
+    &.block {
+        padding-top: 0;     
+    }
+
     background-color: $block-color;
 
     .hero__img {
@@ -364,6 +368,12 @@ h3 {
     }
 
     @media screen and (min-width: 768px) {
+
+        &.block {
+            padding-top: 2rem;
+            padding-bottom: 6rem;
+        }
+
         &{
             .hero__content{
                 display: flex;
@@ -395,6 +405,7 @@ h3 {
 // media-section
 
 .media-section {
+
     .media-section__heading {
         h3{
             margin-top: 0;
@@ -413,6 +424,7 @@ h3 {
 
 
     @media screen and (min-width:768px) {
+
         .media-section__heading{
             width: 600px;
             padding-bottom: 3rem;
@@ -504,6 +516,49 @@ h3 {
         &.block {
             padding-left: 0;
             padding-right: 0;
+        }
+    }
+}
+
+//footer
+.footer {
+    &.block {
+        background: $block-color;
+    }
+    .container {
+        &.grid {
+            row-gap: 3rem;
+        }
+        .footer__heading {
+            align-self: center;
+            h3 {
+                margin-top: 0;
+                font-size: 3rem;
+            }
+        }
+
+        .footer__body {
+            align-self: center;
+            &.grid {
+                column-gap: 2rem;
+                row-gap: 4rem;
+                grid-template-columns: repeat(2, 1fr);
+            } 
+        }
+
+        @media screen and (min-width:768px) {
+            .footer__heading {
+                padding-right:10rem;
+                padding-left: 0;
+            }
+
+            .footer__body.grid {
+                grid-template-columns: repeat(4,1fr);
+                column-gap: 5rem;
+                .list {
+                    width: max-content;
+                }
+            }
         }
     }
 }
