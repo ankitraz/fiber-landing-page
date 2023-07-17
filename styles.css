@@ -441,4 +441,79 @@ h3 {
     width: -moz-max-content;
     width: max-content;
   }
+}
+
+.form label {
+  color: black;
+  font-weight: bold;
+}
+.form .input {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+.form .terms {
+  display: flex;
+  justify-items: center;
+  margin-bottom: 2rem;
+}
+.form .terms .checkbox {
+  margin-right: 1rem;
+}
+.form .btn {
+  width: 100%;
+}
+
+.form_section.block {
+  padding-top: 0;
+}
+.form_section .grid .signup_img {
+  display: none;
+}
+.form_section .grid .form {
+  padding: 2rem;
+  padding-top: 0;
+}
+.form_section .grid .form h3 {
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+.form_section .grid .form p {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .form_section .grid .signup_img {
+    display: block;
+    align-self: center;
+    text-align: center;
+    margin-left: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .form_section .grid .signup_img img {
+    width: 90%;
+    display: block;
+    margin-top: 3rem;
+  }
+  .form_section .grid .form {
+    padding: 3rem;
+    padding-right: 16rem;
+    padding-left: 0;
+    justify-self: center;
+    align-self: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .top {
+    height: 100vh;
+    background: linear-gradient(to right, white 0%, white 50%, #4d13d1 50%, #4d13d1 100%);
+  }
+  .top .signup_img {
+    color: white;
+  }
+  .top .signup_img h3 {
+    color: white;
+  }
 }/*# sourceMappingURL=styles.css.map */
